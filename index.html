@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3b4b146db6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@100;300;400;600;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--Painting with pastels color combination from canva palette-->
+        <h1>Rock Paper Scissor</h1>
+        <p>Welcome! to Game Areana</p>
+    </header>
+
+    <div class="container">
+        <!--score board-->
+        <div class="score-board">
+            <span class="user">User</span>
+            <span id="score"></span>
+            <span class="comp">Comp</span>
+        </div>
+
+        <!---buttons-->
+        <div class="button">
+            <button id="rock" class="btn" onclick="game(this.value)" value="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+
+            <button id="paper" class="btn" onclick="game(this.value)" value="paper"><i class="fa-solid fa-hand"></i></button>
+            
+            <button id="scissor" class="btn" onclick="game(this.value)" value="scissor"><i class="fa-solid fa-hand-scissors"></i></button>
+        </div>
+        
+        <!---output display-->
+        <div id="challenge">
+            <div id="you">
+                <div id="YourObject"></i></div>
+                <div class="who">You</div>
+            </div>
+
+            <div id="result"><p id="who"></p></div>
+
+            <div id="comp">
+                <div id="compObject"></div>
+                <div class="who">Computer</div>
+            </div>
+            
+        </div>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
